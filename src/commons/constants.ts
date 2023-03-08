@@ -15,3 +15,12 @@ export const lightTheme: Theme = {
   foreground: '#000000',
   iconColor: 'fill-black-500',
 }
+
+export const regionsList: string[] = [
+  'All',
+  'Africa',
+  'Americas',
+  'Asia',
+  'Europe',
+  'Oceania',
+]
