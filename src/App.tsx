@@ -49,6 +49,7 @@ function App() {
       <Header />
       <FiltersContainer customTheme={theme}>
         <Searchbar search={search} onChange={handleSearchChange} />
+        <RegionList handleRegion={handleRegion} region={region} />
       </FiltersContainer>
     </AppContainer>
   )
