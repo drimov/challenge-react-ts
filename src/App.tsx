@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import './App.css'
 import { regionsList } from './commons/constants'
+import Contents from './components/Contents'
 import Header from './components/Header'
 import RegionList from './components/Regionlist'
 import Searchbar from './components/Searchbar'
@@ -51,6 +52,7 @@ function App() {
         <Searchbar search={search} onChange={handleSearchChange} />
         <RegionList handleRegion={handleRegion} region={region} />
       </FiltersContainer>
+      <Contents search={search} region={region} />
     </AppContainer>
   )
 }
