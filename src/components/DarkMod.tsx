@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import tw from 'twin.macro'
 import { darkTheme, lightTheme } from '../commons/constants'
 import { useTheme } from '../context/themeContext'
-import { Theme } from '../types/types'
+import { ChildrenProps, Theme } from '../types/types'
 
 const DarkModContainer = styled.div`
   ${tw`
@@ -24,8 +24,7 @@ const TextContainer = styled.p`
     `}
 `
 
-type ButtonProps = {
-  children: React.ReactNode
+type ButtonProps = ChildrenProps & {
   onClick: React.MouseEventHandler<HTMLButtonElement>
 }
 
