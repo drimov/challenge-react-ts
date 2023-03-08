@@ -47,6 +47,9 @@ function App() {
   return (
     <AppContainer customTheme={theme}>
       <Header />
+      <FiltersContainer customTheme={theme}>
+        <Searchbar search={search} onChange={handleSearchChange} />
+      </FiltersContainer>
     </AppContainer>
   )
 }
