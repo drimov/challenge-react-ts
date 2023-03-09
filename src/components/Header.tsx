@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { useTheme } from '../context/themeContext'
 import tw from 'twin.macro'
 import { Theme } from '../types/types'
-import DarMod from './DarkMod'
+import DarkMod from './DarkMod'
 
 const HeaderContainer = styled.header<{ customTheme: Theme }>`
   background-color: ${(props) => props.customTheme.backgroundSd};
@@ -30,7 +30,7 @@ const Header = () => {
       <div>
         <Title>Where in the world?</Title>
       </div>
-      <DarMod />
+      <DarkMod />
     </HeaderContainer>
   )
 }
