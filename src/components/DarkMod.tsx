@@ -51,7 +51,7 @@ const Text = ({ theme }: TextProps) => {
   )
 }
 
-const DarMod = () => {
+const DarkMod = () => {
   const { theme, setTheme } = useTheme()
 
   const handleTheme = () => {
@@ -69,4 +69,4 @@ const DarMod = () => {
   )
 }
 
-export default DarMod
+export default DarkMod

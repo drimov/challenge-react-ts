@@ -56,7 +56,7 @@ const Icon = () => {
 }
 
 type SearchBarProps = {
-  search: string
+  search?: string
   onChange: (value: string) => void
 }
 
