@@ -1,5 +1,5 @@
 import { act, renderTheme, screen } from '../../test/test-utils'
-import RegionList from '../Regionlist'
+import RegionList from '../RegionList'
 import userEvent from '@testing-library/user-event'
 
 type handleRegionType = (
