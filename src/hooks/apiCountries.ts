@@ -45,7 +45,7 @@ const useApiCountries = () => {
     dispatch({ type: 'fetching' })
 
     fetch(baseUrl, { cache: 'force-cache' })
-      .then((response) => response.json())
+      .then((response) => response.json() as Promise<Countries>)
       .then((countries) => dispatch({ type: 'done', payload: countries }))
       .catch((err) => dispatch({ type: 'fail', error: err }))
   }, [])
