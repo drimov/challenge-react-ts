@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeString } from '../types/types'
 
-const THEME_KEY = 'theme'
+export const THEME_KEY = 'theme'
 
 type storageKey = ThemeString | null
 
