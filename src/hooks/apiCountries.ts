@@ -2,11 +2,11 @@ import React from 'react'
 import { Countries } from '../types/types'
 import { baseUrl } from './../commons/constants'
 
-type StateProps =
-  | { status: 'idle'; data: null; error: null }
-  | { status: 'fetching'; data: null; error: null }
-  | { status: 'done'; data: Countries; error: null }
-  | { status: 'fail'; data: null; error: string }
+interface StateProps {
+  status: 'idle' | 'fetching' | 'done' | 'fail'
+  data: null | Countries
+  error: string | null
+}
 
 type ActionType =
   | { type: 'fetching' }
